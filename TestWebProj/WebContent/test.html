@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+	<script src="js/jquery-2.1.1.min.js"></script>	
+	
+	<script>
+		$(document).ready(function(){		
+			
+			$("input").focus(function(){
+				$(this).css("background-color","#cccccc");
+			});
+			
+			$("input").blur(function(){
+				$(this).css("background-color","#ffffff");
+			});
+		});
+	</script>
+
+</head>
+<body>
+
+		
+		<form>
+		
+			Username : <input type="text" name="username" id="username"><br>
+			Password : <input type="password" name="password" id="pwd"><br>
+			
+			<input type="submit" value="LOGIN">
+	
+		</form>
+		
+</body>
+</html>
